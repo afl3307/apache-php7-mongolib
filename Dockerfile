@@ -2,7 +2,6 @@ FROM nimmis/apache
 
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
-USER docker
 # disable interactive functions
 ENV DEBIAN_FRONTEND noninteractive
 
