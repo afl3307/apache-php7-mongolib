@@ -12,4 +12,4 @@ php-apcu php-intl php-imagick php-mcrypt php-json php-gd php-curl && \
 phpenmod mcrypt && \
 rm -rf /var/lib/apt/lists/* && \
 cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
-a2enmod rewrite
+RUN a2enmod rewrite
