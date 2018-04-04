@@ -16,4 +16,3 @@ RUN  echo "DirectoryIndex index.php" >> /etc/apache2/apache2.conf
 RUN  echo "ServerName 3307.dlinkddns.com" >> /etc/apache2/apache2.conf
 
 RUN a2enmod rewrite
-RUN service apache2 restart
