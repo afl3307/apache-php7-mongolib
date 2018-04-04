@@ -2,11 +2,12 @@ FROM nimmis/apache
 
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
+USER docker
 # disable interactive functions
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-apt-get install -y php libapache2-mod-php php-mongodb \
+apt-get install -y sudo php libapache2-mod-php php-mongodb \
 php-fpm php-cli php-mysqlnd php-pgsql php-sqlite3 php-redis \
 php-apcu php-intl php-imagick php-mcrypt php-json php-gd php-curl && \
 phpenmod mcrypt && \
