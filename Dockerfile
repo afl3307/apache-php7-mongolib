@@ -13,4 +13,4 @@ phpenmod mcrypt && \
 rm -rf /var/lib/apt/lists/* && \
 cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
 RUN a2enmod rewrite
-RUN service apahce2 start
+RUN service apache2 restart
